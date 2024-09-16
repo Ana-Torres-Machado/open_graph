@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--THIS IS REQUIRED FOR YOUR FUTURE GRADES IN PROJECT WORK-->
     <meta name="author" content="Ana Torres Machado">
+    <meta name="keywords" content="star wars, the bad batch, clone troopers, clone force 99">
     <meta name="description" content="A fanmade website about Clone Force 99 and their tale!">
     <meta property="og:image" content="https://res.cloudinary.com/diqa3ofyq/image/upload/v1726367732/bad-batch_ojfuux.jpg">
     <meta property="og:title" content="The Bad Batch">
@@ -12,29 +13,46 @@
 
     <title>The Bad Batch</title>
     <!--<link rel="stylesheet" href="someFile.css"-->
+        <style>
+            html{
+            background-image: url(https://res.cloudinary.com/diqa3ofyq/image/upload/v1726367732/bad-batch_ojfuux.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+        </style>
 </head>
 <body>
     <header>
         <h1 style="color:red">The Bad Batch</h1>
-        <!--Add an image later-->
-        For official information, go to <a href="https://www.starwars.com/series/star-wars-the-bad-batch">the official Star Wars website</a> to lean more about the story, the characters, and their journey
+        <h3 style="color:white;">For official information, go to <a href="https://www.starwars.com/series/star-wars-the-bad-batch">the official Star Wars website</a> for more about the story, the characters, and their journey</h3>
     </header>
 
     <nav>
+       <div class="topnav"></div>
+            <input type="text" placeholder="Search...">
+        </div>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="./about.html">About Us</a></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Plot Summary and Thoughts">Plot Summary and Thoughts</a></li>
+            <li><a href="#Characters">Characters</a></li>
         </ul>
-        <!--Add a search bar-->
+
     </nav>
 
     <main>
         <article>
-            <h3>Article Header</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h3>Plot Summary</h3>
+            <p>It is the end of the Clone Wars, Order 66 has happened. After over half of a year being away from base, Clone Force 99 returns to Kamino. The squad itself is composed of five different soldiers.
+                 Hunter is the leader and can sense magnetic fields from droids, Tech is a genius, Wrecker is extremely strong, Crosshair can see things from far away and has excellent aim, and Echo is a cyborg.
+                However, their life is brought upside down once there is betrayal amongst themselves. Along the way, they find Omega, who looks like a normal kid in hindsight, but has a secret not even she knows.
+                Now, the clones will be out on their own as they try to escape the Empire and come to the realization that they are not the soldiers they once were, and that things will change forever for them.
+            </p>
 
+            <p>
+                I personally adored this show. It indirectly gave important lessons about judgement and that not everything is what it seems. The story was well written, they included well-known characters for
+                those who have seen Star Wars for a long time now, and the voice acting is amazing! And the scenes were so well written it was like, despite most characters wearing helmets, you could imagine their
+                facial expressions. You could remain engaged and binge for the longest time. I personally binged from 7-10 episodes in one sitting, and that says something since I'm rather restless.
+            </p>
             <section>
                 <h4>Section Header</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, vel voluptates. Officiis!</p>
@@ -49,10 +67,11 @@
         <aside>
             <h3>Related Content</h3>
             <ul>
-                <li><a href="#">Videos</a></li>
+                <li><a href="https://www.starwars.com/series/star-wars-the-bad-batch">Official Star Wars Site</a></li>
                 <li><a href="#">Comics</a></li>
                 <li><a href="#">Blogs</a></li>
                 <li><a href="#">Pictures</a></li>
+                <li><a href="./about.html">About Us</a></li>
             </ul>
         </aside>
     </main>
