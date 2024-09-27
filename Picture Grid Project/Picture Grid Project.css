@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+}
+
+nav{
+    background-color: plum;
+    display:flex;
+    justify-items: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.container{
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 75px 75px 150px 75px 75px 75px 75px 75px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-areas: 
+                        "Expression Expression Expression Expression Facebook"
+                        "Expression Expression Expression Expression Twitter"
+                        "Expression Expression Expression Expression Mask"
+                        "Birthday Birthday Joker OldClown LazyTown"
+                        "Birthday Birthday Joker OldClown LazyTown"
+                        "Play Superhero Superhero Candy Hats"
+                        "Play Santa Classic Classic Shipping"
+                        "Props Santa CostumeKids1 CostumeKids2 Oz"
+                        "BlackMask MardiGras . . Footer";
+}
+
+.Expression{
+    grid-area: Expression;
+}
+
+.Facebook{
+    grid-area: Facebook;
+}
+
+.Twitter{
+    grid-area: Twitter;
+}
+
+.Mask{
+    grid-area: Mask;
+}
+
+.Birthday{
+    grid-area: Birthday;
+}
+
+.Joker{
+    grid-area: Joker;
+}
+
+.OldClown{
+    grid-area: OldClown;
+}
+
+.LazyTown{
+    grid-area: LazyTown;
+}
+
+.Play{
+    grid-area: Play;
+}
+
+.Superhero{
+    grid-area: Superhero;
+}
+
+.Candy{
+    grid-area: Candy;
+}
+.Hats{
+    grid-area: Hats;
+}
+.Props{
+    grid-area: Props;
+}
+.Santa{
+    grid-area: Santa;
+}
+.Classic{
+    grid-area: Classic;
+}
+.Shipping{
+    grid-area: Shipping;
+}
+.CostumeKids1{
+    grid-area: CostumeKids1;
+}
+.CostumeKids2{
+    grid-area: CostumeKids2;
+}
+.Oz{
+    grid-area: Oz;
+}
+.BlackMask{
+    grid-area: BlackMask;
+}
+.MardiGras{
+    grid-area: MardiGras;
+}
+
+.Footer{
+    grid-area: Footer;
+    align-content: end;
+    justify-content: end;
+}
