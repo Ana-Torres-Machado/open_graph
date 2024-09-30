@@ -10,16 +10,19 @@ nav{
     padding-bottom: 2px;
 }
 
+.navbar > a{
+    text-decoration: none;
+}
+
 .container{
     display: grid;
     gap: 10px;
-    grid-template-rows: 75px 75px 150px 75px 75px 75px 75px 75px;
+    grid-template-rows: 75px 75px 150px 380px 250px 150px 150px 150px;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-areas: 
                         "Expression Expression Expression Expression Facebook"
                         "Expression Expression Expression Expression Twitter"
                         "Expression Expression Expression Expression Mask"
-                        "Birthday Birthday Joker OldClown LazyTown"
                         "Birthday Birthday Joker OldClown LazyTown"
                         "Play Superhero Superhero Candy Hats"
                         "Play Santa Classic Classic Shipping"
@@ -104,5 +107,7 @@ nav{
 .Footer{
     grid-area: Footer;
     align-content: end;
+    text-align-last: end;
     justify-content: end;
+    color: brown;
 }
