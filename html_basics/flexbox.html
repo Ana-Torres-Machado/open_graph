@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex is the Best</title>
+    <style>
+        .flex-container{
+            display: flex;
+            font-size: xx-large;
+            background-color: orange;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-items: flex-end;
+            align-content: start;
+            height: 500px;
+            
+        }
+        .flex-container > div{
+            background-color: black;
+            color: white;
+            margin: 10px;
+            padding: 15px;
+        }
+
+        .box{
+            height: 100px;
+            /* width: 100%; */
+        }
+
+        .box1{
+            order: 4;
+            flex-basis: 150px;
+        }
+        .box2{
+            order: 3;
+        }
+        .box3{
+            order: 2;
+        }
+        .box4{
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="box" style="flex-grow: 2; flex-shrink: 1;">
+            <h1>A</h1>
+        </div>
+        <div class="box" style="flex-basis: 550px; flex-grow: 3; flex-shrink: 3;">
+            <h1>B</h1>
+        </div>
+        <div class="box" style="flex-grow: 4; flex-shrink: 3;">
+            <h1>C</h1>
+        </div>
+        <div class="box" style="flex-grow: 6; flex-shrink: 1;">
+            <h1>D</h1>
+        </div>
+        <!-- <div class="box1">
+            <img src="./images/squares.jpg" width="150" alt="squares">
+        </div>
+        <div class="box2">
+            <img src="https://res.cloudinary.com/diqa3ofyq/image/upload/v1727827636/abstract-patterns_d29ujl.jpg" width="150" alt="spiral">
+        </div>
+        <div class="box3">
+            <img src="https://res.cloudinary.com/diqa3ofyq/image/upload/v1727826860/14787_zjlreb.jpg" width="250" alt="abstract">
+        </div>
+        <div class="box4">
+            <img src="https://res.cloudinary.com/diqa3ofyq/image/upload/v1727827669/photo-1455612693675-112974d4880b_d2mszg.jpg" width="250" alt="shapes">
+        </div> -->
+    </div>
+</body>
+</html>
