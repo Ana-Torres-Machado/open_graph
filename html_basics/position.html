@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+</head>
+<body>
+    <h1 class="fixed">Position + Float</h1>
+
+    <style>
+        .moth1{
+            width:200px;
+            height:200px;
+            /* float:right; */
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            z-index: 2;
+        }
+        .moth2{
+            width:200px;
+            height:200px;
+            /* float:right; */
+            position: fixed;
+            top: 0px;
+            left: 900px;
+            z-index: 2;
+        }
+        .moth3{
+            width:200px;
+            height:200px;
+            /* float:right; */
+            position: fixed;
+            top: 0px;
+            right: 730px;
+            z-index: 4;
+        }
+        .moth4{
+            width:200px;
+            height:200px;
+            /* float:right; */
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            z-index: 0;
+        }
+        float{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        .float{
+            /* you will need float here at some point */
+            margin-left: 15px;
+            width:150px;
+            height:150px;
+            border-radius: 5px;
+            background-color: rgb(207,232,220);
+            padding: 1em;
+            
+        }
+        .float1{
+            float:left;
+        }
+        .float2{
+            float:right;
+        }
+        body{
+            width: 90%;
+            max-width:900px;
+            margin: 0 auto;
+            font: .9em/1.2 Arial, Helvetica, sans-serif;
+            background-image: url();
+        }
+        .box{
+            margin-left: 15px;
+            width:150px;
+            height:150px;
+            border-radius: 5px;
+            background-color: rgb(207,232,220);
+            padding: 1em;
+            float: left;
+        }
+        .special{
+            background-color: rgb(79,185,277);
+            padding: 10px;
+            color: #fff;
+        }
+        /* clearing floats can modify the class */
+        /* .cleared{
+            clear: left;
+        } */
+        /* Add the wrapper class and remove the cleared class */
+        .wrapper{
+            background-color: rgb(79,185,277);
+            padding: 10px;
+            color: #fff;
+        }
+        .fixed{
+            position: relative;
+            top: 0;
+        }
+        .top-adj{
+            margin-top: 4rem;
+        }
+        .sticky{
+            position: sticky;
+            top: 0;
+            background-color: orange;
+            padding: 50px;
+        }
+    </style>
+
+    <p class="top-adj">
+        <img class="moth1" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi38kIzy9sv6Yg9wM58x481gFMDiiv4YGKSS4bnPC5xLO2qsxQBkxOO7qfKxu0zBuBUnKn0YL3YaH5UlEvcy-o1oUJ34grLKhBLAc-_SdrwSXf3tQFbzxQ6hRDVXDf6vXGpl2CLaiL9Bs39/s1600/Venezuelan+poodle+moth%252C+Dr+Arthur+Anker%252C+Flickr.jpg" alt="Venezuelan Moth">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum assumenda voluptatem laudantium id dolor magni?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis facilis similique voluptate molestiae aliquid animi reprehenderit, doloribus quaerat veniam magnam dignissimos assumenda maiores beatae totam quasi rem quas rerum repellat blanditiis iste libero est quibusdam? Ad soluta minus doloremque cumque unde assumenda reprehenderit quos quo earum voluptate quibusdam nostrum dicta, doloribus pariatur labore vitae nisi dolorum amet quis tenetur. Hic minima ea unde. Praesentium eum consectetur excepturi doloribus facilis dolorem! Aliquam sequi eaque ea dolore?
+    </p>
+    <img class="moth2" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi38kIzy9sv6Yg9wM58x481gFMDiiv4YGKSS4bnPC5xLO2qsxQBkxOO7qfKxu0zBuBUnKn0YL3YaH5UlEvcy-o1oUJ34grLKhBLAc-_SdrwSXf3tQFbzxQ6hRDVXDf6vXGpl2CLaiL9Bs39/s1600/Venezuelan+poodle+moth%252C+Dr+Arthur+Anker%252C+Flickr.jpg" alt="Venezuelan Moth">
+    <img class="moth3" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi38kIzy9sv6Yg9wM58x481gFMDiiv4YGKSS4bnPC5xLO2qsxQBkxOO7qfKxu0zBuBUnKn0YL3YaH5UlEvcy-o1oUJ34grLKhBLAc-_SdrwSXf3tQFbzxQ6hRDVXDf6vXGpl2CLaiL9Bs39/s1600/Venezuelan+poodle+moth%252C+Dr+Arthur+Anker%252C+Flickr.jpg" alt="Venezuelan Moth">
+    <img class="moth4" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi38kIzy9sv6Yg9wM58x481gFMDiiv4YGKSS4bnPC5xLO2qsxQBkxOO7qfKxu0zBuBUnKn0YL3YaH5UlEvcy-o1oUJ34grLKhBLAc-_SdrwSXf3tQFbzxQ6hRDVXDf6vXGpl2CLaiL9Bs39/s1600/Venezuelan+poodle+moth%252C+Dr+Arthur+Anker%252C+Flickr.jpg" alt="Venezuelan Moth">
+
+    <div>
+        <div class="float float1">ONE</div>
+        <div class="float float2">TWO</div>
+        <p>The two boxes should float to either side of the text</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h1 class="sticky">Simple float example</h1>
+    <div class="wrapper">
+        <div class="box">Float</div>
+    </div>
+    <p class="special">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quas ipsum itaque non dignissimos error, aspernatur nulla.</p>
+
+    <p class="cleared">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium atque earum, facere cum temporibus ad. Ducimus, accusamus. Tenetur eius incidunt dignissimos quibusdam totam asperiores atque maiores harum aperiam ipsa at soluta fugiat nisi ullam culpa quisquam, veniam rem cum esse eligendi debitis, ducimus quod velit expedita. Quo consequuntur molestias unde quisquam laboriosam tenetur ab nihil quia tempore officiis corrupti repellat ratione veniam vitae exercitationem placeat ad ea ipsam omnis, consequatur ipsa voluptates at! Error velit blanditiis quasi nobis numquam est ratione deleniti rerum eaque!</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse blanditiis natus, optio itaque est facilis quaerat, id accusamus ipsa sint rem. Cupiditate suscipit voluptatibus animi culpa repellat eius! Nesciunt ea unde obcaecati quam officia error temporibus tempore aliquid similique voluptatem, libero reiciendis alias quis voluptatibus quod corporis, delectus maiores accusantium. Exercitationem unde aliquid repellendus et at cumque fugit, odit obcaecati natus tenetur quia nobis porro nisi? Nemo rem necessitatibus aut dolorum consequatur odio voluptatibus rerum. Aperiam optio quae odio tenetur maiores, quo labore possimus natus provident quidem? Vero totam a possimus harum, ratione commodi! Quae quos consequatur illo!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis amet repudiandae perferendis ducimus mollitia reprehenderit modi maiores, suscipit sint nihil ut labore iure, explicabo optio! Laudantium reiciendis repellendus ullam dolorem incidunt, veniam vitae numquam, rerum soluta, obcaecati quos eligendi voluptates at deleniti? Repellat incidunt maxime quo magni quia id nam delectus vel vero! Possimus, suscipit eligendi. Fugiat quia expedita unde! Officiis at quidem similique tempore quisquam sit nostrum dolore pariatur minus, eveniet ipsum, quibusdam molestiae ex velit quae? Illo, minus similique? Repellat in quidem rerum commodi, cum quia delectus labore corporis dignissimos quis adipisci minima unde, corrupti culpa dolorem quibusdam provident illum! Eius ab, repellendus nobis earum praesentium autem esse placeat sit debitis inventore libero aliquid, magni ipsam et facere iure repudiandae numquam! Quidem architecto eligendi exercitationem pariatur cumque? Architecto distinctio tempore rem error natus. Aliquam obcaecati, perferendis maxime, itaque tempore quod unde alias, nobis cumque quas odio vel. Quaerat.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis amet repudiandae perferendis ducimus mollitia reprehenderit modi maiores, suscipit sint nihil ut labore iure, explicabo optio! Laudantium reiciendis repellendus ullam dolorem incidunt, veniam vitae numquam, rerum soluta, obcaecati quos eligendi voluptates at deleniti? Repellat incidunt maxime quo magni quia id nam delectus vel vero! Possimus, suscipit eligendi. Fugiat quia expedita unde! Officiis at quidem similique tempore quisquam sit nostrum dolore pariatur minus, eveniet ipsum, quibusdam molestiae ex velit quae? Illo, minus similique? Repellat in quidem rerum commodi, cum quia delectus labore corporis dignissimos quis adipisci minima unde, corrupti culpa dolorem quibusdam provident illum! Eius ab, repellendus nobis earum praesentium autem esse placeat sit debitis inventore libero aliquid, magni ipsam et facere iure repudiandae numquam! Quidem architecto eligendi exercitationem pariatur cumque? Architecto distinctio tempore rem error natus. Aliquam obcaecati, perferendis maxime, itaque tempore quod unde alias, nobis cumque quas odio vel. Quaerat.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis amet repudiandae perferendis ducimus mollitia reprehenderit modi maiores, suscipit sint nihil ut labore iure, explicabo optio! Laudantium reiciendis repellendus ullam dolorem incidunt, veniam vitae numquam, rerum soluta, obcaecati quos eligendi voluptates at deleniti? Repellat incidunt maxime quo magni quia id nam delectus vel vero! Possimus, suscipit eligendi. Fugiat quia expedita unde! Officiis at quidem similique tempore quisquam sit nostrum dolore pariatur minus, eveniet ipsum, quibusdam molestiae ex velit quae? Illo, minus similique? Repellat in quidem rerum commodi, cum quia delectus labore corporis dignissimos quis adipisci minima unde, corrupti culpa dolorem quibusdam provident illum! Eius ab, repellendus nobis earum praesentium autem esse placeat sit debitis inventore libero aliquid, magni ipsam et facere iure repudiandae numquam! Quidem architecto eligendi exercitationem pariatur cumque? Architecto distinctio tempore rem error natus. Aliquam obcaecati, perferendis maxime, itaque tempore quod unde alias, nobis cumque quas odio vel. Quaerat.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis amet repudiandae perferendis ducimus mollitia reprehenderit modi maiores, suscipit sint nihil ut labore iure, explicabo optio! Laudantium reiciendis repellendus ullam dolorem incidunt, veniam vitae numquam, rerum soluta, obcaecati quos eligendi voluptates at deleniti? Repellat incidunt maxime quo magni quia id nam delectus vel vero! Possimus, suscipit eligendi. Fugiat quia expedita unde! Officiis at quidem similique tempore quisquam sit nostrum dolore pariatur minus, eveniet ipsum, quibusdam molestiae ex velit quae? Illo, minus similique? Repellat in quidem rerum commodi, cum quia delectus labore corporis dignissimos quis adipisci minima unde, corrupti culpa dolorem quibusdam provident illum! Eius ab, repellendus nobis earum praesentium autem esse placeat sit debitis inventore libero aliquid, magni ipsam et facere iure repudiandae numquam! Quidem architecto eligendi exercitationem pariatur cumque? Architecto distinctio tempore rem error natus. Aliquam obcaecati, perferendis maxime, itaque tempore quod unde alias, nobis cumque quas odio vel. Quaerat.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis amet repudiandae perferendis ducimus mollitia reprehenderit modi maiores, suscipit sint nihil ut labore iure, explicabo optio! Laudantium reiciendis repellendus ullam dolorem incidunt, veniam vitae numquam, rerum soluta, obcaecati quos eligendi voluptates at deleniti? Repellat incidunt maxime quo magni quia id nam delectus vel vero! Possimus, suscipit eligendi. Fugiat quia expedita unde! Officiis at quidem similique tempore quisquam sit nostrum dolore pariatur minus, eveniet ipsum, quibusdam molestiae ex velit quae? Illo, minus similique? Repellat in quidem rerum commodi, cum quia delectus labore corporis dignissimos quis adipisci minima unde, corrupti culpa dolorem quibusdam provident illum! Eius ab, repellendus nobis earum praesentium autem esse placeat sit debitis inventore libero aliquid, magni ipsam et facere iure repudiandae numquam! Quidem architecto eligendi exercitationem pariatur cumque? Architecto distinctio tempore rem error natus. Aliquam obcaecati, perferendis maxime, itaque tempore quod unde alias, nobis cumque quas odio vel. Quaerat.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis amet repudiandae perferendis ducimus mollitia reprehenderit modi maiores, suscipit sint nihil ut labore iure, explicabo optio! Laudantium reiciendis repellendus ullam dolorem incidunt, veniam vitae numquam, rerum soluta, obcaecati quos eligendi voluptates at deleniti? Repellat incidunt maxime quo magni quia id nam delectus vel vero! Possimus, suscipit eligendi. Fugiat quia expedita unde! Officiis at quidem similique tempore quisquam sit nostrum dolore pariatur minus, eveniet ipsum, quibusdam molestiae ex velit quae? Illo, minus similique? Repellat in quidem rerum commodi, cum quia delectus labore corporis dignissimos quis adipisci minima unde, corrupti culpa dolorem quibusdam provident illum! Eius ab, repellendus nobis earum praesentium autem esse placeat sit debitis inventore libero aliquid, magni ipsam et facere iure repudiandae numquam! Quidem architecto eligendi exercitationem pariatur cumque? Architecto distinctio tempore rem error natus. Aliquam obcaecati, perferendis maxime, itaque tempore quod unde alias, nobis cumque quas odio vel. Quaerat.</p>
+</body>
+</html>
